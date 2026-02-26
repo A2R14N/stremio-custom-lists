@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "buildCommand": "cd vue && npm install && npm run build",
+    "outputDirectory": "vue/dist",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/api/index"
+        }
+    ]
+}
