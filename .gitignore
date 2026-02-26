@@ -10,6 +10,7 @@ vue/dist/error.log
 # Keep pre-configured frontend env files
 !vue/.env
 !vue/.env.development
+!vue/.env.production
 
 # Logs
 *.log
