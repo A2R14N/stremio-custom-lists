@@ -45,7 +45,7 @@ export function handleConfiguredManifest(req, res, mixpanel) {
   res.send({
     id: 'community.trakt.custom-lists',
     logo: 'https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI',
-    version: process.env.npm_package_version,
+    version: process.env.npm_package_version || '1.0.0',
     name: 'Stremio Custom Lists',
     description: 'Serve custom local JSON and Trakt.tv lists to Stremio.',
     catalogs: catalogs,
@@ -68,7 +68,7 @@ export function handleDefaultManifest(req, res, mixpanel) {
   res.send({
     id: 'community.trakt.custom-lists',
     logo: 'https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI',
-    version: process.env.npm_package_version,
+    version: process.env.npm_package_version || '1.0.0',
     name: 'Stremio Custom Lists',
     description: 'Serve custom local JSON and Trakt.tv lists to Stremio.',
     catalogs: [],
